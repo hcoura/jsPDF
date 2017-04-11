@@ -165,8 +165,8 @@ var jsPDF = (function(global) {
    * @constructor
    * @private
    */
-  function jsPDF(orientation, unit, format, compressPdf) {
-    var options = {};
+  function jsPDF(orientation, unit, format, options, compressPdf) {
+    options = options ? options : {};
 
     if (typeof orientation === 'object') {
       options = orientation;
