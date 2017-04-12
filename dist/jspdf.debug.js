@@ -206,8 +206,8 @@ var set$1 = function set$1(object, property, value, receiver) {
 
 /** @preserve
  * jsPDF - PDF Document creation from JavaScript
- * Version 1.3.4 Built on 2017-04-11T17:33:05.216Z
- *                           CommitID 33c15fc0db
+ * Version 1.3.4 Built on 2017-04-12T17:15:25.327Z
+ *                           CommitID f67bf25d7e
  *
  * Copyright (c) 2010-2016 James Hall <james@parall.ax>, https://github.com/MrRio/jsPDF
  *               2010 Aaron Spike, https://github.com/acspike
@@ -1900,6 +1900,11 @@ var jsPDF = function (global) {
      */
     API.setFontSize = function (size) {
       activeFontSize = size;
+      return this;
+    };
+
+    API.setLineHeight = function (lh) {
+      lineHeightProportion = lh;
       return this;
     };
 

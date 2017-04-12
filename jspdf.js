@@ -1817,6 +1817,11 @@ var jsPDF = (function(global) {
       return this;
     };
 
+    API.setLineHeight = function(lh) {
+      lineHeightProportion = lh;
+      return this;
+    };
+
     /**
      * Sets text font face, variant for upcoming text elements.
      * See output of jsPDF.getFontList() for possible font names, styles.
